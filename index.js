@@ -24,8 +24,8 @@ class Route {
 
     console.log(this.beginningLocation.horizontal)
 
-    horizontal = Math.abs((eastWest.indexOf(this.beginningLocation.horizontal) + 1) - (eastWest.indexOf(this.endingLocation.horizontal) + 1))
-    vertical = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
+    const horizontal = Math.abs((eastWest.indexOf(this.beginningLocation.horizontal) + 1) - (eastWest.indexOf(this.endingLocation.horizontal) + 1))
+    const vertical = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
 
     return horizontal + vertical
   }
