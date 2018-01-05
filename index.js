@@ -32,9 +32,9 @@ class Route {
     const blocks = this.blocksTravelled()
 
     if (peakHours) {
-      return blocks * 5
+      return blocks / 2
     } else {
-      return blocks * 3
+      return blocks / 3
     }
   }
 }
