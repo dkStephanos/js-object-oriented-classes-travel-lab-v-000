@@ -28,5 +28,13 @@ class Route {
     return horizontal + vertical
   }
 
+  estimatedTime(peakHours) {
+    const blocks = this.blocksTravelled()
 
+    if (peakHours) {
+      return blocks * 5
+    } else {
+      return blocks * 3
+    }
+  }
 }
